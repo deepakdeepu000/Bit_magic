@@ -18,11 +18,25 @@ uint32_t reverseBits(uint32_t n) {
         } 
         return cm;
     }
+
+/*long long reverse(long long n){
+        long long s = 0;
+        int j = 31;
+        for(int i = 0;i < 31;i++){
+                id((n<<i)&1){
+                        s+=pow(2,j);
+                }
+                j--;
+        }
+        return s;
+        
+}*/
 int main(){
     uint32_t n;
     cin >> n;
     uint32_t k = reverseBits(n);
   cout << k;
 }
+
 
   
